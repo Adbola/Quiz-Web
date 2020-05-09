@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(216, 203, 203);
+    font-family: monospace;
+}
+
+#afterSubmit {
+    visibility: hidden;
+}
