@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StartNG Quiz</title>
-    <script src="question.js">
+    <script src="questions.js">
     </script>
     <link href="quizCSS.css" rel="stylesheet">
 </head>
 
 <body>
     <h1>Bestest Quiz Ever</h1>
-    <form>
+    <form id="form" name="quiz">
         <P>Who is the Liquid Metal ?</P>
         <input type="radio" id="options" name="question1" value="Pahose">
         <label for="Pahose">Pahose</label>
@@ -24,50 +24,50 @@
         <br>
 
         <P>Where did Coloninal Vilus come from?</P>
-        <input type="radio" id="options" name="question1" value="Anambra">
+        <input type="radio" id="options" name="question2" value="Anambra">
         <label for="Anambra">Anambra</label>
-        <input type="radio" id="options" name="question1" value="Lagos">
+        <input type="radio" id="options" name="question2" value="Lagos">
         <label for="Lagos">Lagos</label>
-        <input type="radio" id="options" name="question1" value="China<">
+        <input type="radio" id="options" name="question2" value="China<">
         <label for="China">China</label>
 
         <br>
 
         <P>Who is the Indaboski?</P>
-        <input type="radio" id="options" name="question1" value="Odumeje">
+        <input type="radio" id="options" name="question3" value="Odumeje">
         <label for="Odumeje">Odumeje</label>
-        <input type="radio" id="options" name="question1" value="Speedy">
+        <input type="radio" id="options" name="question3" value="Speedy">
         <label for="Speedy">Speedy</label>
-        <input type="radio" id="other" name="question1" value="Lasisi<">
+        <input type="radio" id="other" name="question3" value="Lasisi<">
         <label for="Lasisi">Lasisi</label>
 
         <br>
 
         <P>Who is Sinzu Money?</P>
-        <input type="radio" id="options" name="question1" value="Buhari">
+        <input type="radio" id="options" name="question4" value="Buhari">
         <label for="Buhari">Buhari</label>
-        <input type="radio" id="options" name="question1" value="Abba Kyari">
+        <input type="radio" id="options" name="question4" value="Abba Kyari">
         <label for="Abba Kyari">Abba Kyari</label>
-        <input type="radio" id="options" name="question1" value="Osinbajo">
+        <input type="radio" id="options" name="question4" value="Osinbajo">
         <label for="Osinbajo">Osinbajo</label>
 
         <br>
 
         <P>Who is Spending?</P>
-        <input type="radio" id="options" name="question1" value="Buhari">
+        <input type="radio" id="options" name="question5" value="Buhari">
         <label for="Buhari">Buhari</label>
-        <input type="radio" id="options" name="question1" value="Abba Kyari">
+        <input type="radio" id="options" name="question5" value="Abba Kyari">
         <label for="Abba Kyari">Abba Kyari</label>
-        <input type="radio" id="options" name="question1" value="Osinbajo">
+        <input type="radio" id="options" name="question5" value="Osinbajo">
         <label for="Osinbajo">Osinbajo</label>
 
         <br>
 
-        <input type="button" value="Submit" onclick="Quiz();">
+        <input type="button" value="Submit" onclick=check();>
 
     </form>
     <div id="afterSubmit">
-        <p id="correct">Wasere You Sabi</p>
+        <p id="correct"></p>
 
     </div>
 </body>
